@@ -81,6 +81,7 @@ if [ -f /etc/pacman.conf ] && [ ! -f /etc/pacman.conf.t2.bkp ]; then
 
     sudo pacman -Syyu
     sudo pacman -Fy
+    curl -sSL raw.githubusercontent.com/ssleert/zfxtop/master/install.sh | sh #install zfxtop
 
 else
     echo -e "\033[0;33m[SKIP]\033[0m pacman is already configured..."
